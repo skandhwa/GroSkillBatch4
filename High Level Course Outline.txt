@@ -1,0 +1,41 @@
+High Level Course Outline
+-------------------------------------------
+
+
+1. Functional Testing
+
+2. Core Java 
+
+3. Advance Java
+
+4. Maven 
+
+5. Selenium 
+
+6. TestNg
+
+7. ****Real Time Project from scratch
+
+8. GIT Hub
+
+9. Jenkins 
+
+10.API testing -- Postman
+
+11. Rest Assured with Java
+
+12. PlayWright with JavaScript
+
+AI implementation in Test Automation
+
+
+
+
+
+
+
+
+
+
+
+

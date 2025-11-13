@@ -1,0 +1,103 @@
+/html/body/main/div/div/div[2]/div[4]/div/form/table/tbody/tr[1]/td[2]/input
+
+/html/body/main/div/div/div[2]/div[6]/div/form/table/tbody/tr[5]/td[2]/input---Absolute Xpath
+
+//input[@name='firstname']-----Relative Xpath
+
+//tagname[@attribute='value']
+
+//input[@name='firstname']
+
+
+contains
+
+
+https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm
+
+//input[contains(@value,"Manual Tester")]
+
+//input[contains(@value,"Manual")]
+
+
+
+starts with function 
+
+https://demoqa.com/automation-practice-form
+
+//input[starts-with(@placeholder,"Fi")]
+
+//input[starts-with(@placeholder,"name")]
+
+
+text function 
+
+https://demoqa.com/automation-practice-form
+
+//label[text()="Email"]
+
+//label[text()="Subjects"]
+
+
+AND and OR operations 
+
+
+https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm
+
+AND operation
+//input[@name='exp' and @type='radio']
+
+//input[@name='lastname' and @type='text']
+
+OR operation 
+
+//input[@name='lastnam' or @type='text']
+
+//input[@name='tool' or @type='checkbox']
+
+
+
+
+
+(//input[@name='exp' and @type='radio'])[1]
+
+//input[@name='exp' and @type='radio' and @value=1]
+
+
+<img class="_396cs4 _3exPp9" alt="Casserole Set (From ₹399)" src="https://rukminim1.flixcart.com/image/200/200/xif0q/casserole/o/o/i/3-cthfftk202grey0001-milton-original-imagg9k8fnrpdgcu.jpeg?q=70" srcset="https://rukminim1.flixcart.com/image/400/400/xif0q/casserole/o/o/i/3-cthfftk202grey0001-milton-original-imagg9k8fnrpdgcu.jpeg?q=70 2x, https://rukminim1.flixcart.com/image/200/200/xif0q/casserole/o/o/i/3-cthfftk202grey0001-milton-original-imagg9k8fnrpdgcu.jpeg?q=70 1x">
+
+//img[starts-with(@alt,"Casserole Set")]
+
+
+
+
+
+asddfsdafdfsdasafsdfsdfdfsdfasdfa
+
+FirstNameAbcdsfsdfdfsdfsdfsdfdfsdfsdfsdfsd
+
+https://meet.google.com/wfr-okox-ots
+
+D:\\TrainingFolder\\abc2.txt
+
+//a[@att]
+
+
+
+<input type="text" id="dateOfBirthInput" class="form-control" value="27 Jun 2023" fdprocessedid="8ihqg">
+
+
+<input required="" autocomplete="off" placeholder="First Name" type="text" id="firstName" class=" mr-sm-2 form-control" fdprocessedid="7xbmpt">
+
+
+
+
+
+
+
+
+
+
+
+
+
+

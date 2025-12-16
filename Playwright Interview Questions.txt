@@ -1,0 +1,27 @@
+1.  What is difference between Playwright and Selenium ?
+2.  What is demerit of playwright
+3. Why we write await in every step
+4. What is lambda expression
+5. Why fat operator is needed in playwright test
+6. playwright commands--- npx playwright install , npx playwright codegen
+7. How to execute only one scenario under test folder
+8 . How to skip a scenario under test
+9. How to execute playwright test in different browser
+10 . How can we take screenshot and video in playwright 
+11. What are promises in playwright 
+12. what is promise.all in playwright 
+13. what does playwright config.json does and what is its advantages 
+14. Assertions In playwright 
+15 . How to manually wait for a step to get executed in playwright 
+16 . What will happen if we don't write await in every step 
+17 . Why we prefer using css selector in playwright 
+18. How to handle windows, frames, dropdowns in playwright 
+19 . How to perform scroll action in playwright 
+20 . How to do double click, right click, mousehover, drag and drop in playwright (all actions )
+21. How to take control of keyboard in playwright 
+22. How to upload and download a file in playwright 
+23. How to perform excel integration with plawright 
+24. How to perform API Automation testing and Response validation in playwright ?
+25. Parallel execution in playwright 
+ 
+

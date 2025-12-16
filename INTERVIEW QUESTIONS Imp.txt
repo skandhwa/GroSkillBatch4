@@ -1,0 +1,230 @@
+INTERVIEW QUESTIONS
+
+
+Java 
+
+1>Oops Concept
+Inheritance,Abs,encap,poly
+2>All real time examples of OOPS concept 
+3>Types of inheritance - SIngle,multilevel,multiple,Hierarchical
+4>Inheriance program
+5>Polymorphism types-Overloading and overriding
+Why main method cannot be overriden 
+Role of return type in method overloading
+6>****Absract class and interface
+7>Can one interface implement another interface?
+8>can one interface extend another interface ?
+9>What is refernce variable in interface 
+10>Access modifier - public , private,protected,default 
+11>Exception Handling -
+Checked and unchecked diff with examples
+Exception and Error diff.
+Hierarchy of exception class
+12>try catch a small code with def
+13>***diff bw throw and throws keyword 
+14>advantage  of using finally keyword .
+15>***static keyword
+16>what is static method ?
+17>Advantage of using static method 
+18>def of static variable 
+19>Program related to static method and static variable
+20>this keyword - def and examples 
+21>Super keyword-def and examples
+22>final keword- def and examples
+23>***** diff between final,finally and finalize 
+24>What is Multi threading -Def
+25>Use of thread.sleep()
+26>Buffered reader , Input stream reader, Scanner input class ---basic overview and idea 
+27>How to read and write data in a file
+28>****Why string is immutable
+29>Diff between String and String buffer and String builder 
+30>String storage in which memory 
+31>substring,split,indexOf,toUppercase,toLowercase,reverse
+32>What is array and advantages
+33>Date, time function- very basic 
+34>typecasting -- upcasting and downcasting 
+35>Diff bw while and do while loop
+36>What is constructor- types and advantages 
+
+Advance Java 
+
+1>Collections hierarchy 
+2>***what is difference between Array and arraylist
+3>What is the concept of linked list
+4>****What is Set and types of set ,advantages ,syntax,features?
+5>****What is Set and types of Map ,advantages ,syntax,features?
+6>Stack and Queue - basic idea and overview 
+7>Difference between iterator and list iterator
+8>Difference bw list and set 
+9>Diff bw list and map
+10>list -methods (sort, add,addall, clone,aslist,toarray,remove,clear)
+11>****How to convert a list to array 
+12>****How to convert array to list 
+
+
+Misc Concept in Java 
+
+1>*******Singleton class in java -def, examples, advantages ,implementation 
+2>Regex function
+
+
+Programs
+
+1>Prime number
+2>Odd Even
+3>Check a number palindrome or not
+4>Armstrong number
+5>
+
+*
+* *
+* * *
+* * * *
+* * * * * 
+
+6>Fibonacci
+7>To find factorial of number using recursion 
+
+Array
+
+1>Sort and array in ascending and descending order
+2>Find the smallest, largest,fifth largest,fifth smallest
+3>To find the frequency of characters in array
+4>FInd the sum of all elemnts in array
+5>to search an element in array with a given number 
+6>Find the duplicate elements in array
+
+
+String 
+
+1>Reverse of a string
+2>Find the maximum/minimum occuring word in string
+3>Find maximum/minimum occuring letter in a string
+4>Swap a string without using third variable
+5>find the count of vowel ,consonants in a string 
+6>*******Find the frequency of characters in a string (Hashmap)
+7>Find the duplicate letters of a string .
+
+
+Automation Testing 
+
+1>Selenium components 
+2>Selenium web driver architecture ---is web interface and why it is interface 
+3>Selenium web driver hierarchy classes--search context, remote web driver
+
+******Types of locators in selenium 
+4>Xpaths 
+****xpath axes-parent , sibling, following, preceding
+***diff between xpath and CSS 
+indexing in xpath 
+writing dynamic xpath 
+Diff between absolute and relative xpath 
+
+
+5>What is diff bw link text and partial link text 
+6>diff between contains() and text function in xpath
+7>Alerts - types of alert and how to switch to alert 
+8>*****Window handle and window handles diff with example(set concept in window handles)
+9>What is frames ? claculate the number of frames present in a web page 
+10>How to switch from one frame to another
+11>what is diff bw frames and iframes 
+12>****Select class- how to create object , select by 3 types, how to get all values from a drop down(get options method)
+13>How to find the total number of links present in  a web page 
+14>Diff types of browser, navigation and web element command 
+15>Handling checkbox,radiobutton,textbox
+16>*******Diff between find element and find elements command 
+17>How to handle dynamic web table in selenium 
+18>(VVVVIIIIIMMPP*******) wait commands - thread.sleep, implicit wait , explicit wait , fluent wait 
+19>Javascript executor - def, syntax,advantages 
+20>*****Types of exception u have seen in selenium - nosuchelemnt,element not visible, ***stale element exception, 
+element not interactable exception----How to handle these exception (VVVVVVIIIIMMMPPP)
+21>**** Action class in selenium - def, syntax, advantages , how to handle tool tip text in action class
+22>Keyboard event in action class(Not so imp)
+23>Robot class - examples and syntax 
+24>****find the total number of broken links in a web page
+25>**** taking screenshots in selenium 
+26>Practical usage of OOPS concept in your automation framework 
+27>Selenium Grid - advantages and process of setting grid 
+28>Excel read and write in selenium 
+29>Third party tool used in selenium 
+30>**** diff bw assert and verify in selenium 
+
+Maven 
+
+1>Types of repository
+2>*****Maven lifecycle
+3>*****diff bw maven surefire  and maven failsafe plugin
+4>mmaven clean, test command uses 
+
+Cucumber 
+
+1>Def of Cucumber and usage in BDD
+2>Background keyword in cucumber
+3>Hooks ,tags, options in cucumber 
+4>What are the things u mention in runner class in cucumber 
+5>Picon container in cucumber 
+6>How to write feature files 
+7>Diff bw scenario and scenario outline 
+8>passing examples -data driven approach is the same as passing examples in feature files 
+9>BDD - advantages and way of writing 
+
+
+TestNg 
+
+1>****Annotation of testNg and the hierarchy 
+2>priority 
+3>parameters and data provider diff
+4>parallel testing process
+5>cross browser process
+6>time out and invocation count
+7>TestNg listeners -iTest,Ireporter
+8>***How to take screenshot of failed scenarios using listeenr 
+9>*****Iretry analyzer
+10>TestNg asserts method  
+
+
+Page Object Model 
+
+1>what is Page object model- advantages 
+2>What is page factory and methods of page factory 
+
+
+Framework 
+
+1>******Explain the project framework (Mandatory question to be asked in interview)
+2>Folder structure of ur project 
+3>Usage of property files, config files, common functions, step def, target folder , Reusbale method, page class
+
+
+REST API 
+
+1>****All http methods
+2>****All response code
+3>****Diff between put and patch
+4>URI,URL and enpoint
+5>Authorization and Authentication diff
+6>Types of Authentication 
+7>How to parse mock Json
+8>how to parse dynamic json
+9>*****Diff b/w bearer token auth and Oaut 2.0
+10>diff bw Path param and query param
+11>Uses of Multipart method and relaxed Https validation
+12>Advantages of Request and Response spec builder
+13>What is service chaining 
+14>What is the diff between Serialization and De Serialization
+15>What do u mean by POJO classes 
+16>Diff between Oauth 1.0 and Oauth 2.0
+17>What do u mean by Authorization Grant types
+18>What is client credentials
+19>WHat is Authorization code
+20>How to parse Json Array 
+
+
+
+
+POSTMAN
+
+1>How to create collection
+2>WHat is environment in postman
+3>How to validate the response body in postman
+4>How to write test cases in postman

@@ -1,0 +1,106 @@
+ Basics (1–10)
+What is Rest Assured and why is it used?
+
+How do you set up Rest Assured in a Maven project?
+
+What is the default request and response format in Rest Assured?
+
+How do you send a GET request using Rest Assured?
+
+How can you validate the response status code in Rest Assured?
+
+How do you pass query parameters and path parameters in Rest Assured?
+
+How do you pass headers in Rest Assured requests?
+
+How do you send a POST request with JSON payload in Rest Assured?
+
+How do you parse a JSON response in Rest Assured?
+
+What are the key libraries required for Rest Assured?
+
+🔹 Intermediate (11–25)
+What is the use of given(), when(), and then() in Rest Assured?
+
+How do you assert a value inside a nested JSON?
+
+How do you use JSONPath in Rest Assured?
+
+How can you log requests and responses in Rest Assured?
+
+How do you use request specification and response specification?
+
+What is the difference between pathParam and queryParam?
+
+How do you set global headers or authentication in Rest Assured?
+
+How can you reuse common request configurations?
+
+What are filters in Rest Assured? Give an example.
+
+How do you handle authentication (Basic, OAuth 2.0, etc.)?
+
+How do you test file upload/download with Rest Assured?
+
+How can you validate XML responses?
+
+What is the difference between assertThat().body() and assertEquals()?
+
+How do you integrate Rest Assured with TestNG or JUnit?
+
+How do you handle SSL certificate issues in Rest Assured?
+
+🔹 Advanced (26–30)
+How do you implement data-driven testing in Rest Assured?
+
+Can you chain multiple API calls using Rest Assured?
+
+How do you use POJOs and serialization/deserialization with Jackson or Gson?
+
+How do you handle dynamic response assertions?
+
+How do you create a custom filter or interceptor in Rest Assured?
+
+🟠 Postman Interview Questions
+🔹 Basics (31–40)
+What is Postman and how is it useful in API testing?
+
+What are the different types of requests you can send using Postman?
+
+How do you add query parameters in Postman?
+
+How can you test the status code and response body in Postman?
+
+What are environments in Postman?
+
+How do you use variables in Postman?
+
+How do you send authentication details in Postman?
+
+What is the purpose of Pre-request and Test scripts?
+
+How do you test JSON response values in Postman?
+
+What is the difference between pm.expect() and pm.response.to.have.status()?
+
+🔹 Intermediate (41–47)
+How do you chain multiple requests in Postman using variables?
+
+How do you export and import collections?
+
+What is a Postman monitor?
+
+What are Postman collections and how do you use them?
+
+How do you write and run test scripts in Postman?
+
+How do you test file uploads or downloads in Postman?
+
+What is the Postman Collection Runner?
+
+🔹 Advanced (48–50)
+How do you run Postman collections from the command line?
+
+What is Newman and how do you use it?
+
+How can you integrate Postman/Newman into CI/CD pipelines?

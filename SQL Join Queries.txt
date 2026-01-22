@@ -1,0 +1,55 @@
+CREATE TABLE g4.employees6 (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    address VARCHAR(255),
+    salary DECIMAL(10,2),
+    dept_id INT
+);
+
+INSERT INTO g4.employees6 (id, name, address, salary, dept_id)
+VALUES
+(101, 'Alice', 'Bangalore', 60000, 1),
+(102, 'Bob', 'Mumbai', 45000, 2),
+(103, 'Charlie', 'Delhi', 70000, 3),
+(104, 'David', 'Chennai', 50000, 1);
+
+
+
+2. Create Department Table
+
+CREATE TABLE g4.department6 
+(
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(100),
+    location VARCHAR(100)
+);
+
+INSERT INTO g4.department6 (dept_id, dept_name, location)
+VALUES
+(1, 'IT', 'Bangalore'),
+(2, 'HR', 'Mumbai'),
+(3, 'Finance', 'Delhi');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT 
+    e.id,
+    e.name,
+    e.salary,
+    d.dept_name,
+    d.location
+FROM g4.employees6 e
+INNER JOIN g4.department6 d
+ON e.dept_id = d.dept_id;

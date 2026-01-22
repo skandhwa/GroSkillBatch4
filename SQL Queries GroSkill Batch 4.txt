@@ -1,0 +1,137 @@
+CREATE TABLE g4.employees (
+    id INT NOT NULL PRIMARY KEY  UNIQUE,
+    name VARCHAR(100) ,
+    address VARCHAR(255),
+    age INT CHECK(age>=18),
+    salary DECIMAL(10,2),
+    status varchar(10) DEFAULT 'ACTIVE'
+);
+
+INSERT INTO g4.employees (id, name, address, age, salary)
+VALUES (1, 'Rahul Sharma', 'Bangalore, India', 22, 55000.00);
+
+INSERT INTO g4.employees (id, name, address, age, salary, status)
+VALUES (2, 'Anita Verma', 'Mumbai, India', 32, 72000.50, 'ACTIVE');
+
+INSERT INTO g4.employees (id, name, address, age, salary, status)
+VALUES (3, 'Suresh Kumar', 'Chennai, India', 45, 98000.75, 'INACTIVE');
+
+INSERT INTO g4.employees (id, name, address, age, salary)
+VALUES (4, 'Neha Patel', 'Ahmedabad, India', 24, 42000.00);
+
+INSERT INTO g4.employees (id, name, address, age, salary, status)
+VALUES (5, 'Amit Singh', 'Delhi, India', 38, 85000.00, 'ACTIVE');
+
+select * from g4.employees;
+
+ALTER TABLE g4.employees
+ADD department VARCHAR(50);
+
+UPDATE `g4`.`employees` SET `department` = 'Marketing' WHERE (`id` = '1');
+UPDATE `g4`.`employees` SET `department` = 'Finance' WHERE (`id` = '3');
+UPDATE `g4`.`employees` SET `department` = 'IT' WHERE (`id` = '4');
+UPDATE `g4`.`employees` SET `department` = 'HR' WHERE (`id` = '5');
+UPDATE `g4`.`employees` SET `department` = 'Operations' WHERE (`id` = '2');
+
+ALTER TABLE g4.employees
+MODIFY COLUMN name VARCHAR(150);
+
+ALTER TABLE g4.employees
+RENAME TO employee_details;
+
+SELECT * FROM g4.employees
+WHERE salary > 70000 AND age>40;
+
+
+
+CREATE TABLE g4.employees2 (
+    id INT NOT NULL PRIMARY KEY  UNIQUE,
+    name VARCHAR(100) ,
+    address VARCHAR(255),
+    age INT CHECK(age>=18),
+    salary DECIMAL(10,2),
+    status varchar(10) DEFAULT 'ACTIVE'
+);
+
+select * from g4.employees2;
+
+INSERT INTO g4.employees2 (id, name, address, age, salary)
+VALUES (1, 'Rahul Sharma', 'Bangalore, India', 22, 55000.00);
+
+INSERT INTO g4.employees (id, name, address, age, salary, status)
+VALUES (2, 'Anita Verma', 'Mumbai, India', 32, 72000.50, 'ACTIVE');
+
+Delete from g4.employees2 where age=32;
+
+Truncate table g4.employees2;
+
+drop table g4.employees2;
+
+select * from g4.employees group by status;
+
+
+SELECT * FROM g4.employees;
+
+SELECT * FROM g4.employees group by department;
+
+select count(*) AS total_count from g4.employees;
+
+select max(salary) as MAX_SALARY from g4.employees;
+
+select min(salary) as MIN_SALARY from g4.employees;
+
+SELECT department, AVG(salary) AS avg_salary
+FROM g4.employees
+GROUP BY department
+HAVING AVG(salary) > 60000;
+
+
+
+INSERT INTO g4.employees (id, name, address, age, salary, status)
+VALUES (2, 'Anita Verma', 'Mumbai, India', 32, 72000.50, 'ACTIVE','Operations');
+
+UPDATE `g4`.`employees` SET `department` = 'Marketing' WHERE (`id` = '5');
+
+SELECT department
+FROM g4.employees
+WHERE age > 20          -- row-level filter
+GROUP BY department
+Having avg(salary)>50000;
+
+SELECT * FROM g4.employees
+ORDER BY salary desc;
+
+select distinct(department) as Unique_Department from g4.employees;
+
+select * from g4.employees where address like 'B%India';
+
+SELECT * FROM g4.employees 
+WHERE salary BETWEEN 70000 AND 90000;
+
+SELECT * FROM g4.employees 
+WHERE age IN('22',32);
+
+
+ALTER TABLE g4.employees 
+ADD COLUMN dept_id INT;
+
+CREATE TABLE g4.department (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(100),
+    location VARCHAR(100),
+    dept_
+);
+
+INSERT INTO g4.department (dept_id, dept_name, location)
+VALUES
+(1, 'IT', 'Bangalore'),
+(2, 'Marketing', 'Mumbai'),
+(3, 'Operations', 'Mumbai'),
+(4, 'Finance', 'Hyderabad');
+
+
+
+
+
+
+

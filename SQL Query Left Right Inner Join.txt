@@ -1,0 +1,93 @@
+Left Right Inner Join
+------------------------------------------
+
+CREATE TABLE g4.employees5 (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    address VARCHAR(255),
+    salary DECIMAL(10,2),
+    dept_id INT
+);
+
+
+
+INSERT INTO g4.employees5 (id, name, address, salary, dept_id)
+VALUES
+(101, 'Alice', 'Bangalore', 60000, 1),   -- matches IT
+(102, 'Bob', 'Mumbai', 45000, 2),        -- matches HR
+(103, 'Charlie', 'Delhi', 70000, 3),     -- matches Finance
+(104, 'David', 'Chennai', 50000, 1),     -- matches IT
+(105, 'Eve', 'Hyderabad', 55000, NULL),  -- ❌ no department
+(106, 'Frank', 'Pune', 48000, 5);
+
+
+
+
+
+
+CREATE TABLE g4.department5 (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(100),
+    location VARCHAR(100)
+);
+
+INSERT INTO g4.department5 (dept_id, dept_name, location)
+VALUES
+(1, 'IT', 'Bangalore'),
+(2, 'HR', 'Mumbai'),
+(3, 'Finance', 'Delhi'),
+(4, 'Admin', 'Chennai');  -- ❌ no employees
+
+
+Inner Join
+---------------------------------
+SELECT 
+    e.id,
+    e.name,
+    d.dept_name
+FROM g4.employees5 e
+INNER JOIN g4.department5 d
+ON e.dept_id = d.dept_id;
+
+
+Left Join
+-----------------------------
+
+SELECT 
+    e.id,
+    e.name,
+    d.dept_name
+FROM g4.employees5 e
+LEFT JOIN g4.department5 d
+ON e.dept_id = d.dept_id;
+
+
+Right Join
+---------------------------
+
+SELECT 
+    e.id,
+    e.name,
+    d.dept_name
+FROM g4.employees5 e
+RIGHT JOIN g4.department5 d
+ON e.dept_id = d.dept_id;
+
+
+Nth Highest Salary
+--------------------------------------
+
+SELECT MAX(salary) AS nth_highest_salary
+FROM g4.employees5 e1
+WHERE (
+    SELECT COUNT(DISTINCT salary)
+    FROM g4.employees5 e2
+    WHERE e2.salary > e1.salary
+) = N - 1;
+
+
+
+
+
+
+  

@@ -1,0 +1,26 @@
+CREATE TABLE g4.employees7 (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    address VARCHAR(255),
+    salary DECIMAL(10,2),
+    dept_id INT,
+    manager_id INT
+);
+
+INSERT INTO g4.employees7 (id, name, address, salary, dept_id, manager_id)
+VALUES
+(1, 'Alice', 'Bangalore', 70000, 10, 4),
+(2, 'Bob', 'Mumbai', 60000, 20, 4),
+(3, 'Charlie', 'Delhi', 65000, 10, 5),
+(4, 'Robert', 'Pune', 90000, 10, NULL),
+(5, 'Sophia', 'Chennai', 85000, 20, NULL);
+
+select * from g4.employees7 ;
+
+
+SELECT 
+    e.name AS employee_name,
+    m.name AS manager_name
+FROM g4.employees7 e
+LEFT JOIN g4.employees4 m
+ON e.manager_id = m.id;

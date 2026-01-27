@@ -1,0 +1,40 @@
+git init 
+It will initialize a repo in  the local
+
+git clone "URL of the repo"
+This will clone the repo in the local machine
+
+git add 
+This will add a file in the pre staging area
+
+git status 
+Thsi will give the status of the file in pre stag, stag or already pushed
+
+git commit -am "Message" / git commit -m "message"
+This will commit the file from pre staging to staging 
+
+git push 
+This will push the code from the staging to the repo 
+
+git pull 
+This will pull the code from the remote repo and bring the code in the local 
+
+
+git reset 
+This will remove the file from the pre staging area and u can do again changes over here 
+
+git rm <file name>
+This will delete the file from the local repository 
+
+git checkout 
+This will checkout the new branch 
+
+git fetch 
+This will sync the remote repo and the local repo .
+
+git merge 
+Merge the changes and tracking history is being preserved 
+
+
+git rebase 
+merge the changes but will remove the tracking history

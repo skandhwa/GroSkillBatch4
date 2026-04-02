@@ -1,0 +1,92 @@
+Allure Report is a popular test reporting framework used in software testing to create clear, interactive, and visually rich test reports.
+
+It’s commonly used with automation tools like Selenium, TestNG, JUnit, and Cucumber.
+
+🔍 What Allure Report Does
+
+Allure collects test execution data and converts it into an easy-to-understand report that shows:
+
+Test results (Passed, Failed, Skipped)
+Execution steps
+Screenshots & attachments
+Logs and error messages
+Test history & trends
+✨ Key Features
+1. 📊 Interactive Dashboard
+Graphs and charts for quick insights
+Summary of total tests, failures, and success rate
+2. 🧪 Detailed Test Cases
+Step-by-step execution view
+Shows exactly where a test failed
+3. 📎 Attachments Support
+Add screenshots, videos, logs
+Very useful for debugging failures
+4. 🏷️ Test Categorization
+Organize tests by:
+Features
+Stories
+Severity (Critical, Minor, etc.)
+5. 📈 History & Trends
+Track test stability over time
+Identify flaky tests
+🛠️ How It Works (Simple Flow)
+Run your automated tests (e.g., using TestNG)
+Allure collects results (in XML/JSON format)
+Generate report using Allure command
+Open report in browser
+📌 Example Use Case
+
+In a TestNG + Selenium framework:
+
+You run test cases
+Capture screenshots on failure
+Attach them to Allure
+Allure generates a report showing:
+Failed test steps
+Screenshot of failure
+Error logs
+👍 Why Use Allure Report?
+Easy debugging
+Professional-looking reports
+Better visibility for teams & stakeholders
+Works with CI/CD tools like Jenkins
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps to generate Allure Reports 
+--------------------------------------------------------
+
+1. npm install -D allure-playwright
+npm install -D allure-commandline
+
+
+
+2. Add following in config.js file 
+
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({
+  reporter: [
+    ['line'],
+    ['allure-playwright']
+  ],
+});
+
+
+

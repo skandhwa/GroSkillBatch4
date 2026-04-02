@@ -1,0 +1,98 @@
+getByRole() (Explicit + Implicit accessibility)
+-----------------------------------------------------------
+
+These usually have clear roles and accessible names.
+await page.getByRole('button', { name: 'Submit' }).click();
+
+<button id="submitbtn" type="submit" class="btn btn-primary" name="signup" value="sign up"> Submit </button>
+
+<input type="text" placeholder="First Name" class="form-control ng-pristine ng-invalid ng-invalid-required ng-touched" ng-model="FirstName" required="">
+
+
+await page.getByRole('link', { name: 'Home' }).click();
+
+
+getByText() (Text content)
+---------------------------------------------
+
+// Heading
+await page.getByText('Register').isVisible();
+
+// Labels / static text
+await page.getByText('Full Name').isVisible();
+await page.getByText('Address').isVisible();
+
+// Button via text
+await page.getByText('Refresh').click();
+
+<button id="Button1" type="button" class="btn btn-primary" value="Refresh">Refresh</button>
+
+
+getByLabel()
+-----------------------------------
+
+
+<label class="col-md-3 col-xs-3 col-sm-3 control-label">Full Name* </label>
+
+await page.getByLabel('Full Name* ').fill('Saurabh')
+
+<label class="col-md-3 col-xs-3 col-sm-3 control-label">Address</label>
+
+
+await page.getByLabel('First Name').fill('John');
+await page.getByLabel('Last Name').fill('Doe');
+await page.getByLabel('Address').fill('India');
+await page.getByLabel('Email address').fill('abc@test.com');
+await page.getByLabel('Phone').fill('9876543210');
+
+// Password fields
+await page.getByLabel('Password').fill('123456');
+await page.getByLabel('Confirm Password').fill('123456');
+
+getByPlaceholder() 
+----------------------------------------
+
+await page.getByPlaceholder('First Name').fill('John');
+await page.getByPlaceholder('Last Name').fill('Doe');
+await page.getByPlaceholder('Email address').fill('abc@test.com');
+
+
+
+await page.getByPlaceholder('First Name').fill('Saurabh');
+
+
+<input type="text" placeholder="First Name" class="form-control ng-pristine ng-invalid ng-invalid-required ng-touched" ng-model="FirstName" required="">
+
+await expect('').toHaveAttribute('placeholder', 'First Name');
+
+First Name
+
+<option value="Adobe InDesign">Adobe InDesign</option>
+
+await expect("[value='Adobe InDesign']").toHaveValue('Adobe InDesign');
+
+
+flag=fasle
+expect(flag).toBeTruthy();
+
+var x=null;
+
+expect(x).toBeNotNull();
+
+
+
+1.fill --- to pass values in text box
+
+2. click
+
+3.Select Class
+
+4.
+
+
+
+
+
+
+
+

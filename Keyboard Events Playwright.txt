@@ -1,0 +1,18 @@
+await page.keyboard.type('Hello World');///not used now
+await page.keyboard.press('Enter');
+await page.keyboard.press('Control+A'); // Select all
+await page.keyboard.press('Control+C'); // Copy
+await page.keyboard.press('Control+V'); // Paste
+
+await page.keyboard.down('Shift');
+await page.keyboard.type('hello'); // Produces "HELLO"
+await page.keyboard.up('Shift');
+await page.keyboard.press('ArrowDown');
+await page.keyboard.press('Escape');
+await page.keyboard.press('Tab');
+await page.keyboard.press('Backspace');
+
+Mouse Operation
+--------------------------------------------
+
+

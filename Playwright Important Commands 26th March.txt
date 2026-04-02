@@ -1,0 +1,74 @@
+npx playwright test -g "fifth"
+
+
+test('login test @smoke', async ({ page }) => {})
+
+
+npx playwright test -g "@smoke"
+
+
+npx playwright test --headed
+
+npx playwright test --project=chromium
+npx playwright test --project=firefox
+npx playwright test --project=webkit
+
+npx playwright test --project=chromium --project=firefox
+
+npx playwright test --headed --slow-mo=1000
+
+npx playwright test --last-failed
+
+npx playwright test --retries=2
+
+npx playwright test --workers=4
+
+npx playwright show-report
+
+
+test.beforeAll(async () => {
+  console.log('Run once before all tests');
+});
+
+
+
+test.beforeEach(async ({ page }) => {
+  await page.goto('https://example.com');
+  console.log('Runs before each test');
+});
+
+
+test.afterAll(async () => {
+  console.log('Run once before all tests');
+});
+
+test.afterEach(async ({ page }) => {
+  await page.goto('https://example.com');
+  console.log('Runs before each test');
+});
+
+
+ScreenShot
+-----------------------------
+
+
+
+
+
+
+Video Recording
+-----------------------------------
+
+'off' - Do not record video.
+'on' - Record video for each test.
+'retain-on-failure' - Record video for each test, but remove all videos from successful test runs.
+'on-first-retry' - Record video only when retrying a test for the first time.
+
+
+ScreenShot
+-------------------------------
+
+ screenshot: 'only-on-failure', // 'on' | 'off'
+
+
+
